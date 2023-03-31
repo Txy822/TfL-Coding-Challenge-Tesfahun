@@ -13,7 +13,7 @@ Testing
 - Flow Test - Testing flows using Turbine 
 - FakeRepository - To test viewModel fake repository with dummy data is created
 
-Some UI screenshots 
+# Some UI screenshots 
 <img src="img/img1.png" width="400">
 <img src="img/img2.png" width="400">
 <img src="img/img3.png" width="400">
