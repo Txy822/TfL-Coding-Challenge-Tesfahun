@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TfL Coding Challenge-Tesfahun</string>
+    <string name="line_status_update">Tube Lines Status</string>
+    <string name="icon_content_description">TFL Icon</string>
+</resources>
