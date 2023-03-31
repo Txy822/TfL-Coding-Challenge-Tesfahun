@@ -30,9 +30,9 @@ class TflViewModelTest {
     @get:Rule
     val instantTaskExecutionRule: TestRule = InstantTaskExecutorRule()
 
-    var tubeLineRepository: FakeLineRepository = FakeLineRepository()
-    var getTubeLineStatusUseCase: GetLineStatusUseCase = GetLineStatusUseCase(tubeLineRepository)
-    var tubeLineViewModel: TflViewModel = TflViewModel(getTubeLineStatusUseCase)
+    private var tubeLineRepository: FakeLineRepository = FakeLineRepository()
+    private var getTubeLineStatusUseCase: GetLineStatusUseCase = GetLineStatusUseCase(tubeLineRepository)
+    private var tubeLineViewModel: TflViewModel = TflViewModel(getTubeLineStatusUseCase)
 
     @OptIn(ExperimentalCoroutinesApi::class)
     @Before

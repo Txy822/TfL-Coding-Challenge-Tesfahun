@@ -21,7 +21,6 @@ fun LineTopAppBar() {
         ,
         title = {
             Text(
-
                 text = stringResource(R.string.line_status_update),
                 color = colorResource(id = R.color.white),
 

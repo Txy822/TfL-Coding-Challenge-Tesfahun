@@ -1,4 +1,4 @@
-package com.txy822.apps.tflcodingchallenge_tesfahun.presentation
+package com.txy822.apps.tflcodingchallenge_tesfahun
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -6,10 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import com.txy822.apps.tflcodingchallenge_tesfahun.presentation.TfLScreen
 import com.txy822.apps.tflcodingchallenge_tesfahun.presentation.ui.theme.TfLCodingChallengeTesfahunTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -26,7 +25,6 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     TfLTubeLineStatus()
-                    //Greeting("Android")
                 }
             }
         }
@@ -36,16 +34,4 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun TfLTubeLineStatus(){
 TfLScreen()
-}
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    TfLCodingChallengeTesfahunTheme {
-        Greeting("Android")
-    }
 }
