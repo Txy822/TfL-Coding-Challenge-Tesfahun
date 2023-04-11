@@ -17,7 +17,6 @@ class LineRepositoryImpl @Inject constructor(
         return flow {
             emit(Resource.Loading(isLoading = true))
             val remoteListings = try {
-                println("Error occurred 0 Size: "+api.getLineStatus().size)
                 api.getLineStatus()
             } catch (e: IOException) {
                 e.printStackTrace()
